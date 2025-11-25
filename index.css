@@ -1,0 +1,44 @@
+h2{
+    color:blue;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: 48%;
+    
+    width: 100px;
+    height: 100px;
+}
+p{
+    text-align: center;
+}
+link{
+
+}
+a:link {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rosybrown;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: orchid;
+    background-color: darkred;
+    text-decoration: underline;
+}
+a:active {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+hr{
+    margin-bottom:48%;
+}
+body{
+    background-image:url(./backgrond.jpg.webp);
+    background-size: cover;
+}
