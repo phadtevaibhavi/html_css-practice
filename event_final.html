@@ -9,7 +9,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
             background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
             background-size: cover;
             background-position: center;
@@ -30,7 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px;
+            padding: 10px 40px 10px 30px;
             background: rgba(0, 0, 0, 0.4);
             position: fixed;
             top: 0;
@@ -64,13 +64,16 @@
         }
 
         .profile img {
-            height: 60px;
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
+            object-fit: cover;
+            margin-right:-20%;
         }
 
         h1 {
-            color: black;
-            font-size: 60px;
+            color: white;
+            font-size: 70px;
             font-weight: bold;
             margin-top: 140px;
         }
@@ -100,9 +103,19 @@
             padding: 20px;
             scroll-behavior: smooth;
             white-space: nowrap;
+            scroll-snap-type: x mandatory;
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+            white-space: nowrap;
         }
 
         .scroll-container img {
+            height: 180px;
+            border-radius: 10px;
+            scroll-snap-align: center;
             height: 180px;
             border-radius: 10px;
         }
@@ -116,7 +129,7 @@
         /* Updated coconut tree logo */
         .logo img {
             height: 65px;
-            content: url('https://cdn-icons-png.flaticon.com/512/2909/2909763.png');
+            content: url('./coconut.png');
         }
 
         /* Smooth hover animation */
@@ -149,7 +162,7 @@
 
 <div class="navbar">
     <div class="logo">
-        <img src="./logoof coco.jpg.avif" alt="Coconut Tree Logo">
+        <img src="/Users/applelab02/html_css-practice/coconut.png" alt="Coconut Tree Logo">
     </div>
 
     <div class="nav-center">
@@ -168,7 +181,7 @@
     <h1>Events of Goa</h1>
     <h3>Welcome to events happening in Goa</h3>
 
-    <div class="content-box">
+    <div class="content-box" style="width:90%; max-width:1400px;">
         <h2>Upcoming Events</h2>
         <p>
             Goa hosts a vibrant mix of cultural, music, and traditional festivals.
@@ -180,17 +193,33 @@
             Stay tuned for exciting happenings across Panaji, Calangute, Baga,
             Anjuna, Margao, and other beautiful locations in Goa!
         </p>
-        <!-- Horizontal Scrolling Events Section -->
-    <div class="event-gallery">
-        <h2 style="margin-top:40px;">Goa Event Highlights</h2>
-        <div class="scroll-container">
-            <img src="./" alt="Sunburn Festival Goa">
-            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="Goa Carnival Parade">
-            <img src="https://images.unsplash.com/photo-1520975918318-3c4e3f0a3c5b" alt="Beach Festival Goa">
-            <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef" alt="Goa Nightlife Event">
+
+        <!-- International Events -->
+        <div class="event-gallery">
+            <h2>International Events</h2>
+            <div class="scroll-container">
+                <img src="./sunburn.webp" alt="Sunburn Festival Goa">
+                <img src="./iffi.jpeg" alt="IFFI Goa">
+                <img src="./motoverse.jpg.avif" alt="Royal Enfield Motoverse Goa">
+            </div>
         </div>
+
+        <!-- State Events -->
+        <div class="event-gallery">
+            <h2>State Events</h2>
+            <div class="scroll-container">
+                <img src="./holi.jpg" alt="Holi Festival Goa">
+                <img src="./christ.jpg" alt="Christmas in Goa">
+                <img src="./narkasur.jpg" alt="Narkasur Parade Goa">
+            </div>
+        </div>
+
     </div>
+</div>
 
 </div>
 </body>
 </html>
+
+
+
