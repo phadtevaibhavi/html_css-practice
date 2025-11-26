@@ -30,10 +30,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 40px 10px 30px;
-            background: rgba(0, 0, 0, 0.4);
+            padding: 8px 30px 8px 30px;
+            background: rgb(130, 127, 127);
             position: fixed;
             top: 0;
+            height: 10%;
             left: 0;
             z-index: 1000;
         }
@@ -48,9 +49,8 @@
             font-size: 20px;
             color: #ffddaa;
             font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 6px;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 4px;
             transition: 0.3s;
         }
 
@@ -64,18 +64,18 @@
         }
 
         .profile img {
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
             object-fit: cover;
-            margin-right:-20%;
+            margin: 60px;
         }
 
         h1 {
             color: white;
             font-size: 70px;
             font-weight: bold;
-            margin-top: 140px;
+            margin-top: 10%;
         }
 
         h3 {
@@ -129,7 +129,6 @@
         /* Updated coconut tree logo */
         .logo img {
             height: 65px;
-            content: url('./coconut.png');
         }
 
         /* Smooth hover animation */
@@ -162,14 +161,15 @@
 
 <div class="navbar">
     <div class="logo">
-        <img src="/Users/applelab02/html_css-practice/coconut.png" alt="Coconut Tree Logo">
+        <img src="./images/coconut.png" alt="Coconut Tree Logo">
     </div>
 
     <div class="nav-center">
-        <a href="#">Explore Events</a>
-        <a href="#">Registration</a>
-        <a href="#">Contact Us</a>
-        <a href="#">About Us</a>
+        <a href="./event_final.html">Home</a>
+        <a href="./explore-evntspage.html">Explore Events</a>
+        <a href="./registration.html">Registration</a>
+        <a href="./contact_us.html">Contact Us</a>
+        <a href="./about_us.html">About Us</a>
     </div>
 
     <div class="profile">
@@ -198,9 +198,9 @@
         <div class="event-gallery">
             <h2>International Events</h2>
             <div class="scroll-container">
-                <img src="./sunburn.webp" alt="Sunburn Festival Goa">
-                <img src="./iffi.jpeg" alt="IFFI Goa">
-                <img src="./motoverse.jpg.avif" alt="Royal Enfield Motoverse Goa">
+                <img src="./images/sunburn.webp" alt="Sunburn Festival Goa">
+                <img src="./images/iffi.jpeg" alt="IFFI Goa">
+                <img src="./images/motoverse.jpg.avif" alt="Royal Enfield Motoverse Goa">
             </div>
         </div>
 
@@ -208,9 +208,9 @@
         <div class="event-gallery">
             <h2>State Events</h2>
             <div class="scroll-container">
-                <img src="./holi.jpg" alt="Holi Festival Goa">
-                <img src="./christ.jpg" alt="Christmas in Goa">
-                <img src="./narkasur.jpg" alt="Narkasur Parade Goa">
+                <img src="./images/holi.jpg" alt="Holi Festival Goa">
+                <img src="./images/christ.jpg" alt="Christmas in Goa">
+                <img src="./images/narkasur.jpg" alt="Narkasur Parade Goa">
             </div>
         </div>
 
@@ -220,6 +220,3 @@
 </div>
 </body>
 </html>
-
-
-
