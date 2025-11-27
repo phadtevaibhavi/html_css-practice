@@ -1,6 +1,6 @@
 // Validation function
-document.getElementById("regForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.getElementById("regForm").addEventListener("submit", function(e){
+     e.preventDefault();
 
     let valid = true;
 
@@ -64,7 +64,7 @@ document.getElementById("regForm").addEventListener("submit", function(e) {
 
     // If all valid
     if (valid) {
-        document.getElementById("successMessage").style.display = "block";
-        this.reset();
+        document.getElementById("successMessage").style.display = "none";
+        document.getElementById("regForm").reset();
     }
 });
