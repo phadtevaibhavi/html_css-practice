@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('sunset.jpg') center/cover no-repeat fixed;
+            backdrop-filter: blur(2px);
+            color: #fff;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 10%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffdd57;
+        }
+
+        .container {
+            width: 70%;
+            max-width: 70%;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 10px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 20;
+            margin-top: 50px;
+            background: #ff8c42;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 20%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffa95e;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+        <img src="./images/coconut.png" alt="Coconut Tree Logo">
+     </div>
+        <ul>
+            <li><a href="./event_final.html">Home</a></li>
+            <li><a href="./explore-evntspage.html">Explore Events</a></li>
+            <li><a href="./registration.html" class="active">Registration</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Event Registration</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required />
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required />
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required />
+
+            <label>Select Event Category</label>
+            <select required>
+                <option value="">Choose a category</option>
+                <option>Music Festivals</option>
+                <option>Cultural Events</option>
+                <option>Nightlife</option>
+                <option>Food & Drink</option>
+                <option>Outdoor Activities</option>
+            </select>
+
+            <label>Additional Notes</label>
+            <textarea rows="4" placeholder="Any preferences or questions..."></textarea>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+
+</body>
+</html>

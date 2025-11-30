@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Events of Goa</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, serif;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background: rgb(130, 127, 127);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10%;
+            z-index: 1000;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffddaa;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        h1 {
+            margin-top: 140px;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .contact-box {
+            width: 70%;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .contact-item span {
+            font-weight: bold;
+            color: #ffddaa;
+        }
+    </style>
+</head>
+
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img src="coconut.png" height="65">
+    </div>
+
+    <div class="nav-center">
+        <a href="./event_final.html">Home</a>
+        <a href="./explore-evntspage.html">Explore Events</a>
+        <a href="./registration.html">Registration</a>
+        <a href="./contact_us.html" style="background: rgba(255,255,255,0.3);">Contact Us</a>
+        <a href="./about_us.html">About Us</a>
+    </div>
+
+    <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" height="50" style="border-radius:50%;">
+    </div>
+</div>
+
+<div class="overlay">
+    <h1>Contact Us</h1>
+
+    <div class="contact-box">
+        <p class="contact-item"><span>Email:</span> goaevents@contact.com</p>
+        <p class="contact-item"><span>Phone:</span> +91 9876543210</p>
+        <p class="contact-item"><span>Address:</span> Goa Tourism Office, Panaji, Goa</p>
+        <p class="contact-item"><span>Instagram:</span> @goa_events_official</p>
+        <p class="contact-item"><span>Website:</span> www.goaevents.com</p>
+    </div>
+</div>
+</body>
+</html>
