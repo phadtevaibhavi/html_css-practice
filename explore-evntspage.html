@@ -21,33 +21,105 @@
         padding: 20px;
     }
 
-    .navbar {
-        width: 100%;
-        padding: 10px 30px;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-    }
+ .navbar {
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 8px 30px 8px 30px;
+            background: rgb(130, 127, 127);
+            position: fixed;
+            top: 0;
+            height: 10%;
+            left: 0;
+            z-index: 1000;
+        }
 
-    .navbar a {
-        text-decoration: none;
-        color: #ffddaa;
-        font-size: 20px;
-        font-weight: bold;
-        margin: 0 10px;
-        padding: 6px 12px;
-        transition: 0.3s;
-    }
+        .nav-center {
+            display: flex;
+            gap: 2%;
+        }
 
+        .navbar a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffddaa;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }.navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 30px 8px 30px;
+            background: rgb(130, 127, 127);
+            position: fixed;
+            top: 0;
+            height: 10%;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 25%;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffddaa;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
     .navbar a:hover,
     .navbar a.active {
         background: rgba(255, 255, 255, 0.25);
         border-radius: 5px;
     }
+        .logo img {
+            height: 60px;
+        }
+
+        .profile img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 60px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            margin-top: 10%;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: -10px;
+        }
+
+        .content-box {
+            margin: 60px auto;
+            width: 60%;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 10px;
+        }
 
     .container {
         margin-top: 2%;
@@ -123,13 +195,69 @@
 </head>
 
 <body>
+<!-- ⭐ UNIVERSAL NAVBAR (Use on ALL pages) -->
+<style>
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 12px;
+        background: #7d7a7a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 85px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        z-index: 1000;
+    }
+
+    .nav-center {
+        display: flex;
+        gap: 60px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #ffddaa;
+        font-size: 24px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover {
+        color: white;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+
+    .profile img {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+</style>
 
 <div class="navbar">
-    <a href="./event_final.html">Home</a>
-    <a href="./explore-evntspage.html">Explore Events</a>
-    <a href="./registration.html">Registration</a>
-    <a href="./contact_us.html">Contact Us</a>
-    <a href="./about_us.html">About Us</a>
+    <div class="logo">
+        <img src="./images/coconut.png" alt="Goa Logo">
+    </div>
+
+    <div class="nav-center">
+        <a href="./EVENT_MAIN.html">Home</a>
+        <a href="./explore-evntspage.html">Explore Events</a>
+        <a href="./registration.html">Registration</a>
+        <a href="./contact_us.html">Contact Us</a>
+        <a href="./about_us.html">About Us</a>
+    </div>
+
+    <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="User Profile">
+    </div>
 </div>
 
 <div class="overlay">

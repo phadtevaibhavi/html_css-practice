@@ -14,7 +14,8 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: white;
+            color: whitesmoke;
+            text-align: center;
         }
 
         .overlay {
@@ -23,57 +24,68 @@
             padding: 20px;
         }
 
+        /* UNIVERSAL NAVBAR */
         .navbar {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px;
-            background: rgb(130, 127, 127);
+            padding: 5px 12px;
+            background: #7d7a7a;
             position: fixed;
             top: 0;
             left: 0;
-            height: 10%;
+            height: 85px;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
             z-index: 1000;
         }
 
         .nav-center {
             display: flex;
-            gap: 25px;
+            gap: 60px;
         }
 
         .navbar a {
             text-decoration: none;
             color: #ffddaa;
+            font-size: 24px;
             font-weight: bold;
-            font-size: 20px;
-            padding: 5px 12px;
-            border-radius: 5px;
             transition: 0.3s;
         }
 
         .navbar a:hover {
-            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+
+        .logo img {
+            height: 65px;
+        }
+
+        .profile img {
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         h1 {
             margin-top: 140px;
-            text-align: center;
             font-size: 60px;
             font-weight: bold;
         }
 
         .contact-box {
             width: 70%;
-            margin: 40px auto;
+            margin: 50px auto;
             background: rgba(0, 0, 0, 0.45);
-            padding: 30px;
+            padding: 50px;
             border-radius: 12px;
+            font-size: 20px;
         }
 
         .contact-item {
-            margin: 15px 0;
-            font-size: 20px;
+            margin: 18px 0;
         }
 
         .contact-item span {
@@ -84,13 +96,15 @@
 </head>
 
 <body>
+
+<!-- ⭐ NAVBAR -->
 <div class="navbar">
     <div class="logo">
-        <img src="coconut.png" height="65">
+        <img src="./images/coconut.png">
     </div>
 
     <div class="nav-center">
-        <a href="./event_final.html">Home</a>
+        <a href="./EVENT_MAIN.html">Home</a>
         <a href="./explore-evntspage.html">Explore Events</a>
         <a href="./registration.html">Registration</a>
         <a href="./contact_us.html" style="background: rgba(255,255,255,0.3);">Contact Us</a>
@@ -98,7 +112,7 @@
     </div>
 
     <div class="profile">
-        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" height="50" style="border-radius:50%;">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png">
     </div>
 </div>
 
@@ -113,5 +127,6 @@
         <p class="contact-item"><span>Website:</span> www.goaevents.com</p>
     </div>
 </div>
+
 </body>
 </html>
