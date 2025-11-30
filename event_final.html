@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events of Goa</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 30px 8px 30px;
+            background: rgb(130, 127, 127);
+            position: fixed;
+            top: 0;
+            height: 10%;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffddaa;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Logo + Profile */
+        .logo img {
+            height: 60px;
+        }
+
+        .profile img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 60px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            margin-top: 10%;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: -10px;
+        }
+
+        .content-box {
+            margin: 60px auto;
+            width: 60%;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+            /* Scrolling Gallery */
+        .event-gallery {
+            margin-top: 40px;
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+        }
+
+        .scroll-container img {
+            height: 180px;
+            border-radius: 10px;
+            scroll-snap-align: center;
+            height: 180px;
+            border-radius: 10px;
+        }
+
+        /* Adjust profile alignment */
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Updated coconut tree logo */
+        .logo img {
+            height: 65px;
+        }
+
+        /* Smooth hover animation */
+        .scroll-container img {
+            transition: transform 0.3s ease;
+        }
+        .scroll-container img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+                margin-top: 120px;
+            }
+            .navbar a {
+                font-size: 16px;
+                padding: 6px 10px;
+            }
+            .scroll-container img {
+                height: 140px;
+            }
+        }
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="./images/coconut.png" alt="Coconut Tree Logo">
+    </div>
+
+    <div class="nav-center">
+        <a href="./event_final.html">Home</a>
+        <a href="./explore-evntspage.html">Explore Events</a>
+        <a href="./registration.html">Registration</a>
+        <a href="./contact_us.html">Contact Us</a>
+        <a href="./about_us.html">About Us</a>
+    </div>
+
+    <div class="profile">
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Goa Profile Icon">
+    </div>
+</div>
+
+<div class="overlay">
+    <h1>Events of Goa</h1>
+    <h3>Welcome to events happening in Goa</h3>
+
+    <div class="content-box" style="width:90%; max-width:1400px;">
+        <h2>Upcoming Events</h2>
+        <p>
+            Goa hosts a vibrant mix of cultural, music, and traditional festivals.
+            Enjoy beach carnivals, temple fairs, seafood festivals, music concerts,
+            adventure events, and more throughout the year.
+        </p>
+
+        <p>
+            Stay tuned for exciting happenings across Panaji, Calangute, Baga,
+            Anjuna, Margao, and other beautiful locations in Goa!
+        </p>
+
+        <!-- International Events -->
+        <div class="event-gallery">
+            <h2>International Events</h2>
+            <div class="scroll-container">
+                <img src="./images/sunburn.webp" alt="Sunburn Festival Goa">
+                <img src="./images/iffi.jpeg" alt="IFFI Goa">
+                <img src="./images/motoverse.jpg.avif" alt="Royal Enfield Motoverse Goa">
+            </div>
+        </div>
+
+        <!-- State Events -->
+        <div class="event-gallery">
+            <h2>State Events</h2>
+            <div class="scroll-container">
+                <img src="./images/holi.jpg" alt="Holi Festival Goa">
+                <img src="./images/christ.jpg" alt="Christmas in Goa">
+                <img src="./images/narkasur.jpg" alt="Narkasur Parade Goa">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>
